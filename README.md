@@ -33,7 +33,7 @@ See [docs/version.md](docs/version.md) for versioning and packaging details.
     composer install
     npm install
     php artisan migrate
-    php artisan migrate && php artisan db:seed --class=AdminSeeder && php artisan db:seed --class=DefaultCompanySeeder && php artisan db:seed --class=DefaultPrivilegeSeeder
+    php artisan migrate && php artisan db:seed --class=AdminSeeder
     php artisan serve
 ```
 
