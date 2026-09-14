@@ -32,7 +32,7 @@ This project uses **Semantic Versioning (SemVer)**. Every release is tagged as `
 ```sh
 git add -A
 git commit -m "feat: version 1.0.0 release"
-git push origin master
+git push origin main
 
 git tag -a v1.0.0 -m "Release v1.0.0"
 git push origin v1.0.0
@@ -108,7 +108,7 @@ php artisan serve
 
 ## Release Checklist
 
-- [ ] Changes committed and pushed (`git push origin master`)
+- [ ] Changes committed and pushed (`git push origin main`)
 - [ ] Release tag created (`git tag -a vX.Y.Z -m "Release vX.Y.Z"`)
 - [ ] Tag pushed (`git push origin vX.Y.Z`)
 - [ ] GitHub Release published (optional)
