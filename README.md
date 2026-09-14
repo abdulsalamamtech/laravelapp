@@ -4,6 +4,27 @@
 
 Laravel App - is a standard laravel setup application like a starterkit for rapid api development.
 
+## Install as a Starter Kit
+
+Create a new project from this starter kit:
+
+```sh
+# Via Packagist (public) — composer create-project abdulsalamamtech/laravelapp my-app
+
+# Via GitHub VCS (works with private repos / no Packagist)
+composer create-project --repository='{"type":"vcs","url":"git@github.com:abdulsalamamtech/laravelapp.git"}' abdulsalamamtech/laravelapp my-app
+```
+
+Then set up the new project:
+
+```sh
+cd my-app
+composer setup                # installs deps, copies .env, generates key, migrates, builds assets
+php artisan serve
+```
+
+See [docs/version.md](docs/version.md) for versioning and packaging details.
+
 ## Application Setup
 
 ```sh

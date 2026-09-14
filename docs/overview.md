@@ -17,6 +17,7 @@ A standard Laravel 13 starter kit designed for rapid API development, built on P
 - [CI/CD & Deployment](#cicd--deployment)
 - [Scheduling & Queues](#scheduling--queues)
 - [Development CLI Commands](#development-cli-commands)
+- [Versioning & Starter Kit Setup](#versioning--starter-kit-setup)
 
 ---
 
@@ -303,7 +304,8 @@ laravelapp/
 ├── docs/
 │   ├── db.md
 │   ├── flow.md
-│   └── overview.md               # This file
+│   ├── overview.md               # This file
+│   └── version.md                # Versioning (SemVer) + starter kit setup/install commands
 ├── phpstan.neon                  # PHPStan level 5 config (paths: app/)
 ├── phpstan-baseline.neon         # Baseline of pre-existing PHPStan errors (253) — new errors only fail
 ├── resources/
@@ -669,3 +671,18 @@ php artisan scramble:clear               # Clear Scramble cache
 php artisan queue:work --stop-when-empty --timeout=300 --tries=3 --backoff=60
 php artisan queue:restart
 ```
+
+---
+
+## Versioning & Starter Kit Setup
+
+See [docs/version.md](version.md) for the full guide. Summary:
+
+- **SemVer versioning:** releases are tagged `vMAJOR.MINOR.PATCH` (breaking / feature / fix). `php artisan --version` reports the Laravel framework version; git tags version *this* starter kit.
+- **Starter kit install:**
+  ```sh
+  composer create-project abdulsalamamtech/laravelapp my-app                       # Packagist (public)
+  composer create-project --repository='{"type":"vcs","url":"git@github.com:abdulsalamamtech/laravelapp.git"}' abdulsalamamtech/laravelapp my-app  # VCS (private OK)
+  cd my-app && composer setup
+  ```
+- **Publishing caveat:** Composer resolves the version from git tags — tag every release (`git tag -a v1.0.0` + `git push origin v1.0.0`) before consumers pull it.
