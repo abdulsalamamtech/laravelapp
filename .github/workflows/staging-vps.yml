@@ -1,0 +1,65 @@
+name: Deploy Laravel App To Staging (Test/Dev) VPS Server
+
+on:
+  push:
+    branches:
+      - staging
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v2
+
+      - name: Set up SSH Key
+        uses: webfactory/ssh-agent@v0.5.3
+        with:
+          ssh-private-key: ${{ secrets.STAGING_SSH_PRIVATE_KEY }}
+
+      - name: Deploy to Staging Server
+        run: |
+          ssh -o StrictHostKeyChecking=no ${{ secrets.STAGING_SSH_USER }}@${{ secrets.STAGING_SSH_HOST_IP }} << 'EOF'
+            cd ${{ secrets.STAGING_APP_PATH }} # Navigate to the staging folder
+
+            # Display the date and time of deployment on terminal
+            echo "Deployment started at: $(date)" 
+
+            git pull origin main  # Pull the latest changes from main branch
+            composer install  # Install dependencies
+
+            npm install  # Install dependencies
+            npm run build  # Build the Node app
+            
+            # THIS SETUP IS FOR TESTING PURPOSES ONLY. IN PRODUCTION, USE 'php artisan migrate --force' INSTEAD OF 'php artisan migrate:fresh --force'
+            # php artisan migrate:fresh --force # Migrate the database
+            php artisan db:seed # Seed the database
+
+            # PRODUCTION
+            php artisan migrate --force  # Migrate the database
+
+            # CLEAR CACHE
+            php artisan optimize:clear  # Clear the optimization
+            php artisan filament:optimize-clear # Clear Filament optimizations
+            php artisan filament:clear-cached-components
+            php artisan filament:clear
+            php artisan cache:clear  # Clear the cache
+            php artisan view:clear  # Clear the view cache
+            php artisan route:clear  # Clear the route cache
+
+            # FILAMENT SETUP
+            php artisan shield:generate --all --option=policies_and_permissions --panel=administrator
+
+            
+            php artisan optimize  # Optimize the app
+            php artisan filament:optimize # Optimize Filament
+
+            # BACKGROUND JOBS & QUEUE
+            php artisan queue:restart // restart queue after deployment
+            
+
+            # Display the date and time of deployment completion on terminal
+            echo "Deployment completed at: $(date)"
+
+          EOF

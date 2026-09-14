@@ -1,0 +1,81 @@
+<?php
+
+declare(strict_types=1);
+
+namespace App\Policies\System;
+
+use App\Models\System\Role;
+use Illuminate\Auth\Access\HandlesAuthorization;
+use Illuminate\Foundation\Auth\User as AuthUser;
+
+class RolePolicy
+{
+    use HandlesAuthorization;
+
+    protected array $protectedRoles = ['super-admin', 'super_admin', 'admin', 'company'];
+
+    public function viewAny(AuthUser $authUser): bool
+    {
+        return $authUser->can('view_any_role');
+    }
+
+    public function view(AuthUser $authUser, Role $role): bool
+    {
+        return $authUser->can('view_role');
+    }
+
+    public function create(AuthUser $authUser): bool
+    {
+        return $authUser->can('create_role');
+    }
+
+    public function update(AuthUser $authUser, Role $role): bool
+    {
+        // Block modification of core roles by name
+        if (in_array($role->name, $this->protectedRoles)) {
+            return false;
+        }
+
+        return $authUser->can('update_role');
+    }
+
+    public function delete(AuthUser $authUser, Role $role): bool
+    {
+        // Block deletion of core roles by name
+        if (in_array($role->name, $this->protectedRoles)) {
+            return false;
+        }
+
+        return $authUser->can('delete_role');
+    }
+
+    public function restore(AuthUser $authUser, Role $role): bool
+    {
+        return $authUser->can('restore_role');
+    }
+
+    public function forceDelete(AuthUser $authUser, Role $role): bool
+    {
+        return $authUser->can('force_delete_role');
+    }
+
+    public function forceDeleteAny(AuthUser $authUser): bool
+    {
+        return $authUser->can('force_delete_any_role');
+    }
+
+    public function restoreAny(AuthUser $authUser): bool
+    {
+        return $authUser->can('restore_any_role');
+    }
+
+    public function replicate(AuthUser $authUser, Role $role): bool
+    {
+        return $authUser->can('replicate_role');
+    }
+
+    public function reorder(AuthUser $authUser): bool
+    {
+        return $authUser->can('reorder_role');
+    }
+}

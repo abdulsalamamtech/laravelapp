@@ -1,0 +1,37 @@
+{
+    "agents": [
+        "opencode",
+        "claude_code"
+    ],
+    "cloud": false,
+    "guidelines": true,
+    "mcp": true,
+    "nightwatch": true,
+    "packages": [
+        "alizharb/filament-activity-log",
+        "spatie/laravel-medialibrary",
+        "achyutn/filament-log-viewer",
+        "achyutn/filament-storage-monitor",
+        "filament/filament",
+        "spatie/laravel-backup",
+        "spatie/laravel-query-builder",
+        "fruitcake/laravel-debugbar"
+    ],
+    "sail": false,
+    "skills": [
+        "infer-conventions",
+        "laravel-best-practices",
+        "testing-best-practices",
+        "configure-nightwatch",
+        "pulse-development",
+        "tailwindcss-development",
+        "filament-log-viewer-development",
+        "filament-storage-monitor",
+        "filament-development",
+        "laravel-backup",
+        "medialibrary-development",
+        "laravel-query-builder",
+        "debug-using-debugbar",
+        "standard-laravel"
+    ]
+}

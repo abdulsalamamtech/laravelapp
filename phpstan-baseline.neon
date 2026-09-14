@@ -1,0 +1,1009 @@
+parameters:
+	ignoreErrors:
+		-
+			message: '#^Using nullsafe method call on non\-nullable type Illuminate\\Http\\Request\. Use \-\> instead\.$#'
+			identifier: nullsafe.neverNull
+			count: 3
+			path: app/Exceptions/ProFeatureAccessException.php
+
+		-
+			message: '#^Access to an undefined property Illuminate\\Database\\Eloquent\\Model\:\:\$authenticatable_id\.$#'
+			identifier: property.notFound
+			count: 2
+			path: app/Filament/Pages/AuthenticationLogs.php
+
+		-
+			message: '#^Access to an undefined property Illuminate\\Database\\Eloquent\\Model\:\:\$authenticatable_type\.$#'
+			identifier: property.notFound
+			count: 1
+			path: app/Filament/Pages/AuthenticationLogs.php
+
+		-
+			message: '#^Anonymous function should return Illuminate\\Database\\Eloquent\\Builder but returns Illuminate\\Database\\Query\\Builder\.$#'
+			identifier: return.type
+			count: 1
+			path: app/Filament/Pages/AuthenticationLogs.php
+
+		-
+			message: '#^Parameter \#1 \$schema of method Filament\\Actions\\Action\:\:schema\(\) expects array\<Filament\\Actions\\Action\|Filament\\Actions\\ActionGroup\|Filament\\Schemas\\Components\\Component\>\|Closure\|null, array\{Filament\\Tables\\Columns\\TextColumn, Filament\\Infolists\\Components\\TextEntry, Filament\\Infolists\\Components\\TextEntry, Filament\\Infolists\\Components\\TextEntry, Filament\\Infolists\\Components\\TextEntry, Filament\\Infolists\\Components\\TextEntry, Filament\\Infolists\\Components\\TextEntry, Filament\\Infolists\\Components\\TextEntry, \.\.\.\} given\.$#'
+			identifier: argument.type
+			count: 1
+			path: app/Filament/Pages/AuthenticationLogs.php
+
+		-
+			message: '#^Call to an undefined method Illuminate\\Database\\Eloquent\\Model\:\:syncPermissions\(\)\.$#'
+			identifier: method.notFound
+			count: 1
+			path: app/Filament/Resources/Roles/Pages/CreateRole.php
+
+		-
+			message: '#^Access to an undefined property Illuminate\\Database\\Eloquent\\Model\:\:\$name\.$#'
+			identifier: property.notFound
+			count: 1
+			path: app/Filament/Resources/Roles/RoleResource.php
+
+		-
+			message: '#^Access to an undefined property Illuminate\\Database\\Eloquent\\Model\:\:\$email\.$#'
+			identifier: property.notFound
+			count: 1
+			path: app/Filament/Resources/Users/Schemas/UserForm.php
+
+		-
+			message: '#^Call to an undefined method Illuminate\\Database\\Eloquent\\Model\:\:roles\(\)\.$#'
+			identifier: method.notFound
+			count: 1
+			path: app/Filament/Resources/Users/Schemas/UserForm.php
+
+		-
+			message: '#^Call to an undefined static method App\\Models\\System\\Role\:\:where\(\)\.$#'
+			identifier: staticMethod.notFound
+			count: 1
+			path: app/Filament/Resources/Users/Schemas/UserForm.php
+
+		-
+			message: '#^Access to an undefined property App\\Models\\User\:\:\$email\.$#'
+			identifier: property.notFound
+			count: 1
+			path: app/Filament/Resources/Users/Tables/UsersTable.php
+
+		-
+			message: '#^Access to an undefined property App\\Models\\User\:\:\$id\.$#'
+			identifier: property.notFound
+			count: 1
+			path: app/Filament/Resources/Users/Tables/UsersTable.php
+
+		-
+			message: '#^Anonymous function should return Illuminate\\Database\\Eloquent\\Builder but returns Illuminate\\Database\\Query\\Builder\.$#'
+			identifier: return.type
+			count: 4
+			path: app/Filament/Resources/Users/Tables/UsersTable.php
+
+		-
+			message: '#^Using nullsafe property access on non\-nullable type App\\Models\\User\. Use \-\> instead\.$#'
+			identifier: nullsafe.neverNull
+			count: 2
+			path: app/Filament/Resources/Users/Tables/UsersTable.php
+
+		-
+			message: '#^Using nullsafe property access "\?\-\>all_users_count" on left side of \?\? is unnecessary\. Use \-\> instead\.$#'
+			identifier: nullsafe.neverNull
+			count: 1
+			path: app/Filament/Widgets/StatsOverview.php
+
+		-
+			message: '#^Using nullsafe property access "\?\-\>pending_count" on left side of \?\? is unnecessary\. Use \-\> instead\.$#'
+			identifier: nullsafe.neverNull
+			count: 1
+			path: app/Filament/Widgets/StatsOverview.php
+
+		-
+			message: '#^Using nullsafe property access "\?\-\>today_count" on left side of \?\? is unnecessary\. Use \-\> instead\.$#'
+			identifier: nullsafe.neverNull
+			count: 1
+			path: app/Filament/Widgets/StatsOverview.php
+
+		-
+			message: '#^Using nullsafe property access "\?\-\>unique_users_count" on left side of \?\? is unnecessary\. Use \-\> instead\.$#'
+			identifier: nullsafe.neverNull
+			count: 1
+			path: app/Filament/Widgets/StatsOverview.php
+
+		-
+			message: '#^Using nullsafe property access "\?\-\>unique_verified_users_count" on left side of \?\? is unnecessary\. Use \-\> instead\.$#'
+			identifier: nullsafe.neverNull
+			count: 1
+			path: app/Filament/Widgets/StatsOverview.php
+
+		-
+			message: '#^Using nullsafe property access "\?\-\>verified_count" on left side of \?\? is unnecessary\. Use \-\> instead\.$#'
+			identifier: nullsafe.neverNull
+			count: 1
+			path: app/Filament/Widgets/StatsOverview.php
+
+		-
+			message: '#^Call to static method count\(\) on an unknown class App\\Models\\Transaction\.$#'
+			identifier: class.notFound
+			count: 1
+			path: app/Filament/Widgets/TransactionOverviewStatsWidget.php
+
+		-
+			message: '#^Call to static method sum\(\) on an unknown class App\\Models\\Transaction\.$#'
+			identifier: class.notFound
+			count: 1
+			path: app/Filament/Widgets/TransactionOverviewStatsWidget.php
+
+		-
+			message: '#^Call to static method where\(\) on an unknown class App\\Models\\Transaction\.$#'
+			identifier: class.notFound
+			count: 4
+			path: app/Filament/Widgets/TransactionOverviewStatsWidget.php
+
+		-
+			message: '#^Call to an undefined static method App\\Models\\User\:\:create\(\)\.$#'
+			identifier: staticMethod.notFound
+			count: 1
+			path: app/Http/Controllers/SocialiteController.php
+
+		-
+			message: '#^Call to an undefined static method App\\Models\\User\:\:where\(\)\.$#'
+			identifier: staticMethod.notFound
+			count: 2
+			path: app/Http/Controllers/SocialiteController.php
+
+		-
+			message: '#^Method App\\Http\\Controllers\\SocialiteController\:\:redirect\(\) should return Illuminate\\Http\\RedirectResponse but returns Symfony\\Component\\HttpFoundation\\RedirectResponse\.$#'
+			identifier: return.type
+			count: 1
+			path: app/Http/Controllers/SocialiteController.php
+
+		-
+			message: '#^Call to an undefined static method App\\Models\\Contact\:\:create\(\)\.$#'
+			identifier: staticMethod.notFound
+			count: 1
+			path: app/Http/Controllers/V1/Admin/AdminContactController.php
+
+		-
+			message: '#^Call to an undefined static method App\\Models\\Contact\:\:latest\(\)\.$#'
+			identifier: staticMethod.notFound
+			count: 1
+			path: app/Http/Controllers/V1/Admin/AdminContactController.php
+
+		-
+			message: '#^Access to an undefined property Illuminate\\Contracts\\Auth\\Authenticatable\:\:\$two_factor_auth\.$#'
+			identifier: property.notFound
+			count: 1
+			path: app/Http/Controllers/V1/AuthController.php
+
+		-
+			message: '#^Access to an undefined property Illuminate\\Http\\Request\:\:\$email\.$#'
+			identifier: property.notFound
+			count: 2
+			path: app/Http/Controllers/V1/AuthController.php
+
+		-
+			message: '#^Access to an undefined property Illuminate\\Http\\Request\:\:\$otp\.$#'
+			identifier: property.notFound
+			count: 1
+			path: app/Http/Controllers/V1/AuthController.php
+
+		-
+			message: '#^Access to an undefined property Illuminate\\Http\\Request\:\:\$password\.$#'
+			identifier: property.notFound
+			count: 1
+			path: app/Http/Controllers/V1/AuthController.php
+
+		-
+			message: '#^Call to an undefined method Illuminate\\Contracts\\Auth\\Authenticatable\:\:hasVerifiedEmail\(\)\.$#'
+			identifier: method.notFound
+			count: 1
+			path: app/Http/Controllers/V1/AuthController.php
+
+		-
+			message: '#^Call to an undefined method Illuminate\\Contracts\\Auth\\Authenticatable\:\:update\(\)\.$#'
+			identifier: method.notFound
+			count: 1
+			path: app/Http/Controllers/V1/AuthController.php
+
+		-
+			message: '#^Call to an undefined static method App\\Models\\User\:\:create\(\)\.$#'
+			identifier: staticMethod.notFound
+			count: 1
+			path: app/Http/Controllers/V1/AuthController.php
+
+		-
+			message: '#^Call to an undefined static method App\\Models\\User\:\:where\(\)\.$#'
+			identifier: staticMethod.notFound
+			count: 6
+			path: app/Http/Controllers/V1/AuthController.php
+
+		-
+			message: '#^Method App\\Http\\Controllers\\V1\\AuthController\:\:resendTwoFactorToken\(\) has invalid return type App\\Http\\Controllers\\V1\\Response\.$#'
+			identifier: class.notFound
+			count: 1
+			path: app/Http/Controllers/V1/AuthController.php
+
+		-
+			message: '#^PHPDoc tag @param has invalid value \(current_password\)\: Unexpected token "\\n     \* ", expected variable at offset 100 on line 4$#'
+			identifier: phpDoc.parseError
+			count: 1
+			path: app/Http/Controllers/V1/AuthController.php
+
+		-
+			message: '#^PHPDoc tag @param has invalid value \(email\)\: Unexpected token "\\n     ", expected variable at offset 53 on line 4$#'
+			identifier: phpDoc.parseError
+			count: 1
+			path: app/Http/Controllers/V1/AuthController.php
+
+		-
+			message: '#^PHPDoc tag @param has invalid value \(email\)\: Unexpected token "\\n     \* ", expected variable at offset 48 on line 4$#'
+			identifier: phpDoc.parseError
+			count: 1
+			path: app/Http/Controllers/V1/AuthController.php
+
+		-
+			message: '#^PHPDoc tag @param has invalid value \(email\)\: Unexpected token "\\n     \* ", expected variable at offset 52 on line 4$#'
+			identifier: phpDoc.parseError
+			count: 1
+			path: app/Http/Controllers/V1/AuthController.php
+
+		-
+			message: '#^PHPDoc tag @param has invalid value \(email\)\: Unexpected token "\\n     \* ", expected variable at offset 65 on line 5$#'
+			identifier: phpDoc.parseError
+			count: 1
+			path: app/Http/Controllers/V1/AuthController.php
+
+		-
+			message: '#^PHPDoc tag @param has invalid value \(email\)\: Unexpected token "\\n     \* ", expected variable at offset 84 on line 4$#'
+			identifier: phpDoc.parseError
+			count: 1
+			path: app/Http/Controllers/V1/AuthController.php
+
+		-
+			message: '#^PHPDoc tag @param has invalid value \(email\)\: Unexpected token "\\n     \* ", expected variable at offset 87 on line 4$#'
+			identifier: phpDoc.parseError
+			count: 1
+			path: app/Http/Controllers/V1/AuthController.php
+
+		-
+			message: '#^PHPDoc tag @param has invalid value \(email\)\: Unexpected token "\\n     \* ", expected variable at offset 90 on line 4$#'
+			identifier: phpDoc.parseError
+			count: 1
+			path: app/Http/Controllers/V1/AuthController.php
+
+		-
+			message: '#^PHPDoc tag @param has invalid value \(name\)\: Unexpected token "\\n     \* ", expected variable at offset 45 on line 4$#'
+			identifier: phpDoc.parseError
+			count: 1
+			path: app/Http/Controllers/V1/AuthController.php
+
+		-
+			message: '#^PHPDoc tag @param has invalid value \(otp\)\: Unexpected token "\\n     ", expected variable at offset 108 on line 5$#'
+			identifier: phpDoc.parseError
+			count: 1
+			path: app/Http/Controllers/V1/AuthController.php
+
+		-
+			message: '#^PHPDoc tag @param has invalid value \(otp\)\: Unexpected token "\\n     ", expected variable at offset 70 on line 5$#'
+			identifier: phpDoc.parseError
+			count: 1
+			path: app/Http/Controllers/V1/AuthController.php
+
+		-
+			message: '#^PHPDoc tag @param has invalid value \(otp\)\: Unexpected token "\\n     \* ", expected variable at offset 105 on line 5$#'
+			identifier: phpDoc.parseError
+			count: 1
+			path: app/Http/Controllers/V1/AuthController.php
+
+		-
+			message: '#^PHPDoc tag @param has invalid value \(password\)\: Unexpected token "\\n     ", expected variable at offset 123 on line 5$#'
+			identifier: phpDoc.parseError
+			count: 1
+			path: app/Http/Controllers/V1/AuthController.php
+
+		-
+			message: '#^PHPDoc tag @param has invalid value \(password\)\: Unexpected token "\\n     ", expected variable at offset 71 on line 5$#'
+			identifier: phpDoc.parseError
+			count: 1
+			path: app/Http/Controllers/V1/AuthController.php
+
+		-
+			message: '#^PHPDoc tag @param has invalid value \(password\)\: Unexpected token "\\n     \* ", expected variable at offset 88 on line 6$#'
+			identifier: phpDoc.parseError
+			count: 1
+			path: app/Http/Controllers/V1/AuthController.php
+
+		-
+			message: '#^PHPDoc tag @param has invalid value \(password\)\: Unexpected token "\\n     \*", expected variable at offset 128 on line 6$#'
+			identifier: phpDoc.parseError
+			count: 1
+			path: app/Http/Controllers/V1/AuthController.php
+
+		-
+			message: '#^PHPDoc tag @param has invalid value \(terms_and_condition\)\: Unexpected token "\\n     ", expected variable at offset 122 on line 7$#'
+			identifier: phpDoc.parseError
+			count: 1
+			path: app/Http/Controllers/V1/AuthController.php
+
+		-
+			message: '#^Parameter \#1 \$user of method App\\Http\\Controllers\\V1\\AuthController\:\:generateAuthToken\(\) expects App\\Models\\User, Illuminate\\Contracts\\Auth\\Authenticatable\|null given\.$#'
+			identifier: argument.type
+			count: 1
+			path: app/Http/Controllers/V1/AuthController.php
+
+		-
+			message: '#^Using nullsafe property access on non\-nullable type mixed\. Use \-\> instead\.$#'
+			identifier: nullsafe.neverNull
+			count: 4
+			path: app/Http/Controllers/V1/AuthController.php
+
+		-
+			message: '#^Variable \$expiresInHours on left side of \?\? always exists and is not nullable\.$#'
+			identifier: nullCoalesce.variable
+			count: 1
+			path: app/Http/Controllers/V1/AuthController.php
+
+		-
+			message: '#^Access to an undefined property App\\Models\\PendingEmailChange\:\:\$effective_at\.$#'
+			identifier: property.notFound
+			count: 1
+			path: app/Http/Controllers/V1/EmailChangeController.php
+
+		-
+			message: '#^Access to an undefined property App\\Models\\PendingEmailChange\:\:\$pending_email\.$#'
+			identifier: property.notFound
+			count: 1
+			path: app/Http/Controllers/V1/EmailChangeController.php
+
+		-
+			message: '#^Access to an undefined property App\\Models\\PendingEmailChange\:\:\$status\.$#'
+			identifier: property.notFound
+			count: 5
+			path: app/Http/Controllers/V1/EmailChangeController.php
+
+		-
+			message: '#^Call to an undefined method Illuminate\\Contracts\\Auth\\Factory\:\:id\(\)\.$#'
+			identifier: method.notFound
+			count: 2
+			path: app/Http/Controllers/V1/Quest/ChatMessageController.php
+
+		-
+			message: '#^Call to an undefined static method App\\Models\\ChatMessage\:\:create\(\)\.$#'
+			identifier: staticMethod.notFound
+			count: 1
+			path: app/Http/Controllers/V1/Quest/ChatMessageController.php
+
+		-
+			message: '#^Using nullsafe method call on non\-nullable type Illuminate\\Contracts\\Auth\\Factory\. Use \-\> instead\.$#'
+			identifier: nullsafe.neverNull
+			count: 2
+			path: app/Http/Controllers/V1/Quest/ChatMessageController.php
+
+		-
+			message: '#^Using nullsafe method call on non\-nullable type Illuminate\\Http\\Request\. Use \-\> instead\.$#'
+			identifier: nullsafe.neverNull
+			count: 1
+			path: app/Http/Controllers/V1/Quest/ChatMessageController.php
+
+		-
+			message: '#^Call to an undefined static method App\\Models\\Contact\:\:create\(\)\.$#'
+			identifier: staticMethod.notFound
+			count: 1
+			path: app/Http/Controllers/V1/Quest/ContactController.php
+
+		-
+			message: '#^Call to an undefined static method App\\Models\\Waitlist\:\:create\(\)\.$#'
+			identifier: staticMethod.notFound
+			count: 1
+			path: app/Http/Controllers/V1/Quest/WaitlistController.php
+
+		-
+			message: '#^Using nullsafe method call on non\-nullable type App\\Http\\Requests\\Quest\\StoreWaitlistRequest\. Use \-\> instead\.$#'
+			identifier: nullsafe.neverNull
+			count: 1
+			path: app/Http/Controllers/V1/Quest/WaitlistController.php
+
+		-
+			message: '#^Unsafe usage of new static\(\)\.$#'
+			identifier: new.static
+			count: 1
+			path: app/Mail/AlertUserMail.php
+
+		-
+			message: '#^Access to an undefined property App\\Models\\User\:\:\$name\.$#'
+			identifier: property.notFound
+			count: 1
+			path: app/Mail/CompanyWelcomeMail.php
+
+		-
+			message: '#^Unsafe usage of new static\(\)\.$#'
+			identifier: new.static
+			count: 1
+			path: app/Mail/CompanyWelcomeMail.php
+
+		-
+			message: '#^Using nullsafe property access on non\-nullable type App\\Models\\User\. Use \-\> instead\.$#'
+			identifier: nullsafe.neverNull
+			count: 1
+			path: app/Mail/CompanyWelcomeMail.php
+
+		-
+			message: '#^Access to an undefined property App\\Models\\Contact\:\:\$subject\.$#'
+			identifier: property.notFound
+			count: 1
+			path: app/Mail/ContactMail.php
+
+		-
+			message: '#^Unsafe usage of new static\(\)\.$#'
+			identifier: new.static
+			count: 1
+			path: app/Mail/ContactMail.php
+
+		-
+			message: '#^Using nullsafe property access "\?\-\>subject" on left side of \?\? is unnecessary\. Use \-\> instead\.$#'
+			identifier: nullsafe.neverNull
+			count: 1
+			path: app/Mail/ContactMail.php
+
+		-
+			message: '#^Unsafe usage of new static\(\)\.$#'
+			identifier: new.static
+			count: 1
+			path: app/Mail/EmailChangeAcceptanceMail.php
+
+		-
+			message: '#^Unsafe usage of new static\(\)\.$#'
+			identifier: new.static
+			count: 1
+			path: app/Mail/EmailChangeCompletedMail.php
+
+		-
+			message: '#^Unsafe usage of new static\(\)\.$#'
+			identifier: new.static
+			count: 1
+			path: app/Mail/EmailChangeConfirmationMail.php
+
+		-
+			message: '#^Unsafe usage of new static\(\)\.$#'
+			identifier: new.static
+			count: 1
+			path: app/Mail/EmailChangeRequestMail.php
+
+		-
+			message: '#^Access to an undefined property Illuminate\\Database\\Eloquent\\Collection\<int, Illuminate\\Database\\Eloquent\\Model\>\|Illuminate\\Database\\Eloquent\\Model\:\:\$old_email\.$#'
+			identifier: property.notFound
+			count: 1
+			path: app/Mail/EmailChangeWindowMail.php
+
+		-
+			message: '#^Unsafe usage of new static\(\)\.$#'
+			identifier: new.static
+			count: 1
+			path: app/Mail/EmailChangeWindowMail.php
+
+		-
+			message: '#^Unsafe usage of new static\(\)\.$#'
+			identifier: new.static
+			count: 1
+			path: app/Mail/ExceptionMail.php
+
+		-
+			message: '#^Unsafe usage of new static\(\)\.$#'
+			identifier: new.static
+			count: 1
+			path: app/Mail/ForgetPasswordMail.php
+
+		-
+			message: '#^Access to an undefined property App\\Models\\User\:\:\$email\.$#'
+			identifier: property.notFound
+			count: 1
+			path: app/Mail/ReverifyEmailMail.php
+
+		-
+			message: '#^Access to an undefined property App\\Models\\User\:\:\$name\.$#'
+			identifier: property.notFound
+			count: 1
+			path: app/Mail/ReverifyEmailMail.php
+
+		-
+			message: '#^Unsafe usage of new static\(\)\.$#'
+			identifier: new.static
+			count: 1
+			path: app/Mail/ReverifyEmailMail.php
+
+		-
+			message: '#^Using nullsafe property access "\?\-\>name" on left side of \?\? is unnecessary\. Use \-\> instead\.$#'
+			identifier: nullsafe.neverNull
+			count: 1
+			path: app/Mail/ReverifyEmailMail.php
+
+		-
+			message: '#^Using nullsafe property access on non\-nullable type \$this\(App\\Mail\\ReverifyEmailMail\)\. Use \-\> instead\.$#'
+			identifier: nullsafe.neverNull
+			count: 1
+			path: app/Mail/ReverifyEmailMail.php
+
+		-
+			message: '#^Using nullsafe property access on non\-nullable type App\\Models\\User\. Use \-\> instead\.$#'
+			identifier: nullsafe.neverNull
+			count: 1
+			path: app/Mail/ReverifyEmailMail.php
+
+		-
+			message: '#^Unsafe usage of new static\(\)\.$#'
+			identifier: new.static
+			count: 1
+			path: app/Mail/TwoFactorAuthMail.php
+
+		-
+			message: '#^Unsafe usage of new static\(\)\.$#'
+			identifier: new.static
+			count: 1
+			path: app/Mail/VerifyAccountMail.php
+
+		-
+			message: '#^Unsafe usage of new static\(\)\.$#'
+			identifier: new.static
+			count: 1
+			path: app/Mail/WaitlistMail.php
+
+		-
+			message: '#^Access to an undefined property App\\Models\\PendingEmailChange\:\:\$status\.$#'
+			identifier: property.notFound
+			count: 1
+			path: app/Models/PendingEmailChange.php
+
+		-
+			message: '#^Access to an undefined property App\\Models\\User\:\:\$email\.$#'
+			identifier: property.notFound
+			count: 1
+			path: app/Models/User.php
+
+		-
+			message: '#^Access to an undefined property App\\Models\\User\:\:\$id\.$#'
+			identifier: property.notFound
+			count: 5
+			path: app/Models/User.php
+
+		-
+			message: '#^The @use tag of class App\\Models\\User describes Illuminate\\Database\\Eloquent\\Factories\\HasFactory but the class uses Illuminate\\Database\\Eloquent\\Concerns\\HasUuids\.$#'
+			identifier: generics.wrongParent
+			count: 1
+			path: app/Models/User.php
+
+		-
+			message: '#^Property App\\Notifications\\AlertUser\:\:\$sendVia \(array\) on left side of \?\? is not nullable\.$#'
+			identifier: nullCoalesce.property
+			count: 1
+			path: app/Notifications/AlertUser.php
+
+		-
+			message: '#^Parameter \$transaction of method App\\Policies\\TransactionPolicy\:\:delete\(\) has invalid type App\\Models\\Transaction\.$#'
+			identifier: class.notFound
+			count: 1
+			path: app/Policies/TransactionPolicy.php
+
+		-
+			message: '#^Parameter \$transaction of method App\\Policies\\TransactionPolicy\:\:forceDelete\(\) has invalid type App\\Models\\Transaction\.$#'
+			identifier: class.notFound
+			count: 1
+			path: app/Policies/TransactionPolicy.php
+
+		-
+			message: '#^Parameter \$transaction of method App\\Policies\\TransactionPolicy\:\:replicate\(\) has invalid type App\\Models\\Transaction\.$#'
+			identifier: class.notFound
+			count: 1
+			path: app/Policies/TransactionPolicy.php
+
+		-
+			message: '#^Parameter \$transaction of method App\\Policies\\TransactionPolicy\:\:restore\(\) has invalid type App\\Models\\Transaction\.$#'
+			identifier: class.notFound
+			count: 1
+			path: app/Policies/TransactionPolicy.php
+
+		-
+			message: '#^Parameter \$transaction of method App\\Policies\\TransactionPolicy\:\:update\(\) has invalid type App\\Models\\Transaction\.$#'
+			identifier: class.notFound
+			count: 1
+			path: app/Policies/TransactionPolicy.php
+
+		-
+			message: '#^Parameter \$transaction of method App\\Policies\\TransactionPolicy\:\:view\(\) has invalid type App\\Models\\Transaction\.$#'
+			identifier: class.notFound
+			count: 1
+			path: app/Policies/TransactionPolicy.php
+
+		-
+			message: '#^Access to an undefined property App\\Models\\User\:\:\$id\.$#'
+			identifier: property.notFound
+			count: 1
+			path: app/Providers/AppServiceProvider.php
+
+		-
+			message: '#^Call to an undefined method Illuminate\\Contracts\\Auth\\Factory\:\:check\(\)\.$#'
+			identifier: method.notFound
+			count: 1
+			path: app/Providers/AppServiceProvider.php
+
+		-
+			message: '#^Call to an undefined method Illuminate\\Contracts\\Foundation\\Application\:\:isProduction\(\)\.$#'
+			identifier: method.notFound
+			count: 7
+			path: app/Providers/AppServiceProvider.php
+
+		-
+			message: '#^Match expression does not handle remaining value\: true$#'
+			identifier: match.unhandled
+			count: 1
+			path: app/Providers/AppServiceProvider.php
+
+		-
+			message: '#^Missing parameter \$events \(Illuminate\\Contracts\\Events\\Dispatcher\) in call to Laravel\\Nightwatch\\Ingest constructor\.$#'
+			identifier: argument.missing
+			count: 1
+			path: app/Providers/AppServiceProvider.php
+
+		-
+			message: '#^Call to an undefined method Illuminate\\Contracts\\Auth\\Factory\:\:check\(\)\.$#'
+			identifier: method.notFound
+			count: 4
+			path: app/Providers/Filament/AdministratorPanelProvider.php
+
+		-
+			message: '#^Call to an undefined method Illuminate\\Contracts\\Auth\\Factory\:\:user\(\)\.$#'
+			identifier: method.notFound
+			count: 4
+			path: app/Providers/Filament/AdministratorPanelProvider.php
+
+		-
+			message: '#^Call to static method createCustomer\(\) on an unknown class App\\Libraries\\Flutterwave\.$#'
+			identifier: class.notFound
+			count: 1
+			path: app/Services/Custom/FlutterwaveBillingService.php
+
+		-
+			message: '#^Call to static method createPlan\(\) on an unknown class App\\Libraries\\Flutterwave\.$#'
+			identifier: class.notFound
+			count: 1
+			path: app/Services/Custom/FlutterwaveBillingService.php
+
+		-
+			message: '#^Call to static method createSubscription\(\) on an unknown class App\\Libraries\\Flutterwave\.$#'
+			identifier: class.notFound
+			count: 1
+			path: app/Services/Custom/FlutterwaveBillingService.php
+
+		-
+			message: '#^Call to static method disableSubscription\(\) on an unknown class App\\Libraries\\Flutterwave\.$#'
+			identifier: class.notFound
+			count: 1
+			path: app/Services/Custom/FlutterwaveBillingService.php
+
+		-
+			message: '#^Call to static method enableSubscription\(\) on an unknown class App\\Libraries\\Flutterwave\.$#'
+			identifier: class.notFound
+			count: 1
+			path: app/Services/Custom/FlutterwaveBillingService.php
+
+		-
+			message: '#^Call to static method getCustomer\(\) on an unknown class App\\Libraries\\Flutterwave\.$#'
+			identifier: class.notFound
+			count: 2
+			path: app/Services/Custom/FlutterwaveBillingService.php
+
+		-
+			message: '#^Call to static method getPlan\(\) on an unknown class App\\Libraries\\Flutterwave\.$#'
+			identifier: class.notFound
+			count: 1
+			path: app/Services/Custom/FlutterwaveBillingService.php
+
+		-
+			message: '#^Call to static method getSubscription\(\) on an unknown class App\\Libraries\\Flutterwave\.$#'
+			identifier: class.notFound
+			count: 1
+			path: app/Services/Custom/FlutterwaveBillingService.php
+
+		-
+			message: '#^Call to static method listCustomers\(\) on an unknown class App\\Libraries\\Flutterwave\.$#'
+			identifier: class.notFound
+			count: 1
+			path: app/Services/Custom/FlutterwaveBillingService.php
+
+		-
+			message: '#^Call to static method listPlans\(\) on an unknown class App\\Libraries\\Flutterwave\.$#'
+			identifier: class.notFound
+			count: 1
+			path: app/Services/Custom/FlutterwaveBillingService.php
+
+		-
+			message: '#^Call to static method listSubscriptions\(\) on an unknown class App\\Libraries\\Flutterwave\.$#'
+			identifier: class.notFound
+			count: 1
+			path: app/Services/Custom/FlutterwaveBillingService.php
+
+		-
+			message: '#^Call to static method makePayment\(\) on an unknown class App\\Libraries\\Flutterwave\.$#'
+			identifier: class.notFound
+			count: 1
+			path: app/Services/Custom/FlutterwaveBillingService.php
+
+		-
+			message: '#^Call to static method updateCustomer\(\) on an unknown class App\\Libraries\\Flutterwave\.$#'
+			identifier: class.notFound
+			count: 1
+			path: app/Services/Custom/FlutterwaveBillingService.php
+
+		-
+			message: '#^Call to static method updatePlan\(\) on an unknown class App\\Libraries\\Flutterwave\.$#'
+			identifier: class.notFound
+			count: 1
+			path: app/Services/Custom/FlutterwaveBillingService.php
+
+		-
+			message: '#^Call to static method verifyPaymentByReference\(\) on an unknown class App\\Libraries\\Flutterwave\.$#'
+			identifier: class.notFound
+			count: 1
+			path: app/Services/Custom/FlutterwaveBillingService.php
+
+		-
+			message: '#^Call to static method where\(\) on an unknown class App\\Models\\Transaction\.$#'
+			identifier: class.notFound
+			count: 2
+			path: app/Services/Custom/FlutterwaveBillingService.php
+
+		-
+			message: '#^Call to function method_exists\(\) with ''App\\\\Libraries\\\\Paystack'' and ''cancelSubscription'' will always evaluate to false\.$#'
+			identifier: function.impossibleType
+			count: 1
+			path: app/Services/Custom/PaystackBillingService.php
+
+		-
+			message: '#^Call to method verify\(\) on an unknown class App\\Libraries\\Paystack\.$#'
+			identifier: class.notFound
+			count: 1
+			path: app/Services/Custom/PaystackBillingService.php
+
+		-
+			message: '#^Call to static method createCustomer\(\) on an unknown class App\\Libraries\\Paystack\.$#'
+			identifier: class.notFound
+			count: 1
+			path: app/Services/Custom/PaystackBillingService.php
+
+		-
+			message: '#^Call to static method createPlan\(\) on an unknown class App\\Libraries\\Paystack\.$#'
+			identifier: class.notFound
+			count: 1
+			path: app/Services/Custom/PaystackBillingService.php
+
+		-
+			message: '#^Call to static method createSubscription\(\) on an unknown class App\\Libraries\\Paystack\.$#'
+			identifier: class.notFound
+			count: 1
+			path: app/Services/Custom/PaystackBillingService.php
+
+		-
+			message: '#^Call to static method disableSubscription\(\) on an unknown class App\\Libraries\\Paystack\.$#'
+			identifier: class.notFound
+			count: 2
+			path: app/Services/Custom/PaystackBillingService.php
+
+		-
+			message: '#^Call to static method enableSubscription\(\) on an unknown class App\\Libraries\\Paystack\.$#'
+			identifier: class.notFound
+			count: 1
+			path: app/Services/Custom/PaystackBillingService.php
+
+		-
+			message: '#^Call to static method getCustomer\(\) on an unknown class App\\Libraries\\Paystack\.$#'
+			identifier: class.notFound
+			count: 1
+			path: app/Services/Custom/PaystackBillingService.php
+
+		-
+			message: '#^Call to static method getPlan\(\) on an unknown class App\\Libraries\\Paystack\.$#'
+			identifier: class.notFound
+			count: 1
+			path: app/Services/Custom/PaystackBillingService.php
+
+		-
+			message: '#^Call to static method getSubscription\(\) on an unknown class App\\Libraries\\Paystack\.$#'
+			identifier: class.notFound
+			count: 1
+			path: app/Services/Custom/PaystackBillingService.php
+
+		-
+			message: '#^Call to static method initiatePayment\(\) on an unknown class App\\Libraries\\Paystack\.$#'
+			identifier: class.notFound
+			count: 1
+			path: app/Services/Custom/PaystackBillingService.php
+
+		-
+			message: '#^Call to static method listCustomers\(\) on an unknown class App\\Libraries\\Paystack\.$#'
+			identifier: class.notFound
+			count: 1
+			path: app/Services/Custom/PaystackBillingService.php
+
+		-
+			message: '#^Call to static method listPlans\(\) on an unknown class App\\Libraries\\Paystack\.$#'
+			identifier: class.notFound
+			count: 1
+			path: app/Services/Custom/PaystackBillingService.php
+
+		-
+			message: '#^Call to static method listSubscriptions\(\) on an unknown class App\\Libraries\\Paystack\.$#'
+			identifier: class.notFound
+			count: 1
+			path: app/Services/Custom/PaystackBillingService.php
+
+		-
+			message: '#^Call to static method updateCustomer\(\) on an unknown class App\\Libraries\\Paystack\.$#'
+			identifier: class.notFound
+			count: 1
+			path: app/Services/Custom/PaystackBillingService.php
+
+		-
+			message: '#^Call to static method updatePlan\(\) on an unknown class App\\Libraries\\Paystack\.$#'
+			identifier: class.notFound
+			count: 1
+			path: app/Services/Custom/PaystackBillingService.php
+
+		-
+			message: '#^Call to static method validateCustomer\(\) on an unknown class App\\Libraries\\Paystack\.$#'
+			identifier: class.notFound
+			count: 1
+			path: app/Services/Custom/PaystackBillingService.php
+
+		-
+			message: '#^Call to static method verify\(\) on an unknown class App\\Libraries\\Paystack\.$#'
+			identifier: class.notFound
+			count: 1
+			path: app/Services/Custom/PaystackBillingService.php
+
+		-
+			message: '#^Class App\\Libraries\\Paystack not found\.$#'
+			identifier: class.notFound
+			count: 1
+			path: app/Services/Custom/PaystackBillingService.php
+
+		-
+			message: '#^Parameter \$paystack of method App\\Services\\Custom\\PaystackBillingService\:\:__construct\(\) has invalid type App\\Libraries\\Paystack\.$#'
+			identifier: class.notFound
+			count: 1
+			path: app/Services/Custom/PaystackBillingService.php
+
+		-
+			message: '#^Property App\\Services\\Custom\\PaystackBillingService\:\:\$paystack has unknown class App\\Libraries\\Paystack as its type\.$#'
+			identifier: class.notFound
+			count: 1
+			path: app/Services/Custom/PaystackBillingService.php
+
+		-
+			message: '#^Access to an undefined property App\\Models\\PendingEmailChange\:\:\$confirming_token_id\.$#'
+			identifier: property.notFound
+			count: 1
+			path: app/Services/EmailChangeService.php
+
+		-
+			message: '#^Access to an undefined property App\\Models\\PendingEmailChange\:\:\$new_confirmed_at\.$#'
+			identifier: property.notFound
+			count: 1
+			path: app/Services/EmailChangeService.php
+
+		-
+			message: '#^Access to an undefined property App\\Models\\PendingEmailChange\:\:\$old_confirmed_at\.$#'
+			identifier: property.notFound
+			count: 1
+			path: app/Services/EmailChangeService.php
+
+		-
+			message: '#^Access to an undefined property App\\Models\\PendingEmailChange\:\:\$old_email\.$#'
+			identifier: property.notFound
+			count: 4
+			path: app/Services/EmailChangeService.php
+
+		-
+			message: '#^Access to an undefined property App\\Models\\PendingEmailChange\:\:\$pending_email\.$#'
+			identifier: property.notFound
+			count: 5
+			path: app/Services/EmailChangeService.php
+
+		-
+			message: '#^Access to an undefined property App\\Models\\PendingEmailChange\:\:\$status\.$#'
+			identifier: property.notFound
+			count: 1
+			path: app/Services/EmailChangeService.php
+
+		-
+			message: '#^Access to an undefined property App\\Models\\PendingEmailChange\:\:\$user\.$#'
+			identifier: property.notFound
+			count: 7
+			path: app/Services/EmailChangeService.php
+
+		-
+			message: '#^Access to an undefined property App\\Models\\User\:\:\$email\.$#'
+			identifier: property.notFound
+			count: 3
+			path: app/Services/EmailChangeService.php
+
+		-
+			message: '#^Access to an undefined property App\\Models\\User\:\:\$id\.$#'
+			identifier: property.notFound
+			count: 4
+			path: app/Services/EmailChangeService.php
+
+		-
+			message: '#^Call to an undefined static method App\\Models\\PendingEmailChange\:\:create\(\)\.$#'
+			identifier: staticMethod.notFound
+			count: 1
+			path: app/Services/EmailChangeService.php
+
+		-
+			message: '#^Call to an undefined static method App\\Models\\PendingEmailChange\:\:where\(\)\.$#'
+			identifier: staticMethod.notFound
+			count: 5
+			path: app/Services/EmailChangeService.php
+
+		-
+			message: '#^Call to an undefined static method App\\Models\\PendingEmailChange\:\:whereIn\(\)\.$#'
+			identifier: staticMethod.notFound
+			count: 1
+			path: app/Services/EmailChangeService.php
+
+		-
+			message: '#^Call to an undefined static method App\\Models\\User\:\:whereRaw\(\)\.$#'
+			identifier: staticMethod.notFound
+			count: 1
+			path: app/Services/EmailChangeService.php
+
+		-
+			message: '#^Access to an undefined property App\\Models\\User\:\:\$email\.$#'
+			identifier: property.notFound
+			count: 6
+			path: app/Services/MailService.php
+
+		-
+			message: '#^Access to an undefined property App\\Models\\User\:\:\$id\.$#'
+			identifier: property.notFound
+			count: 5
+			path: app/Services/MailService.php
+
+		-
+			message: '#^Call to an undefined static method App\\Models\\User\:\:whereNull\(\)\.$#'
+			identifier: staticMethod.notFound
+			count: 1
+			path: app/Services/MailService.php
+
+		-
+			message: '#^Using nullsafe property access on non\-nullable type App\\Models\\User\. Use \-\> instead\.$#'
+			identifier: nullsafe.neverNull
+			count: 8
+			path: app/Services/MailService.php
+
+		-
+			message: '#^Call to an undefined static method App\\Models\\OtpToken\:\:create\(\)\.$#'
+			identifier: staticMethod.notFound
+			count: 1
+			path: app/Services/OtpTokenService.php
+
+		-
+			message: '#^Call to an undefined static method App\\Models\\OtpToken\:\:where\(\)\.$#'
+			identifier: staticMethod.notFound
+			count: 2
+			path: app/Services/OtpTokenService.php
+
+		-
+			message: '#^Parameter \#1 \$value of static method Illuminate\\Support\\Facades\\Hash\:\:make\(\) expects string, int given\.$#'
+			identifier: argument.type
+			count: 1
+			path: app/Services/OtpTokenService.php
+
+		-
+			message: '#^Using nullsafe property access on non\-nullable type mixed\. Use \-\> instead\.$#'
+			identifier: nullsafe.neverNull
+			count: 2
+			path: app/Services/OtpTokenService.php
+
+		-
+			message: '#^Variable \$theToken on left side of \?\? always exists and is not nullable\.$#'
+			identifier: nullCoalesce.variable
+			count: 1
+			path: app/Services/OtpTokenService.php
